@@ -1,0 +1,66 @@
+/* font-family:Work Sans */
+body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+font-family: 'Open Sans', sans-serif;
+}
+/* gamer zone header style */
+header{
+    background: #FFF;
+    width: 1330px;
+    height: 100px;
+    border: 2px solid red;
+    padding: 25px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    display: flex;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+
+   
+}
+nav li{
+    list-style: none;
+    margin: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+nav li a{
+    text-decoration: none;
+    color: #3C354F;
+ 
+}
+.gamer-logo{
+    display: flex;
+    width: 86.041px;
+    height: 40px;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+nav h3{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+}
+.logo-title-color{
+    color: #FF42A5;
+}
+.nav-container{
+    display: flex;
+   
+}
+/* banner style for gamer zone */
+.banner{
+    background: #FFF;;
+    width: 1330px;
+    height: 927px;
+    border: 2px solid yellowgreen;
+    display: flex;
+}

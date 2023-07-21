@@ -3,23 +3,25 @@
 
 body{
 font-family: 'Open Sans', sans-serif;
-padding: 0px 100px; */
+width: 100%;
 }
 /* gamer zone header style */
-header{
+/* header{
     background: #FFF;
     height: 30px;
     padding: 0px 100px;
     padding-top: 5px;
    
-}
+} */
 nav{
     display: flex;
     justify-content: space-between;
     padding: 0px 100px;
+    align-items: center;
 }
 .nav-items{
     display: flex;
+    align-items: center;
     color: #3C354F;
     text-align: center;
     font-size: 18px;
@@ -59,6 +61,19 @@ nav h3{
     padding-left: 250px;
    
 }
+.nav-btn-style{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    display: flex;
+    align-items: center;
+  
+
+}
+.nav-btn-style li{
+    margin: 10px !important;
+    
+}
+
 /* banner style for gamer zone */
 .banner{
     height: 500px;
@@ -131,6 +146,9 @@ nav h3{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
    padding: 50px 100px;
 }
+.gamer-section img{
+    width: 600px;
+}
 .gamer-description{
     text-align: right;
     font-size: 30px;
@@ -200,12 +218,18 @@ nav h3{
 .game-funny-img{
     display: flex;
     align-items: center;
-    width: 342px;
     height: 400px;
     gap: 10px;
     padding: 40px 100px;
     
     
+}
+.gamer-pictuer {
+    width: 400px;
+
+}
+.gamer-pictuer img{
+    width: 100%;
 }
 /* play section style */
 .play-section-style{
@@ -241,7 +265,7 @@ nav h3{
     font-weight: 400;
 }
 .play-imge{
-    width: 500px;
+    width: 100%;
     height: 550px;
     border-radius: 8px;
     background: url(<path-to-image>), lightgray -7.583px 0px / 102.389% 100% no-repeat;
@@ -265,18 +289,25 @@ nav h3{
     height: 350px;
 }
 /* review section style */
-.review-style{
-    display: flex;
-    align-items: center;
-    padding-top: 100px;
-    justify-content: center;
+.review-style {
+	display: flex;
+	align-items: center;
+	/* padding-top: 100px; */
+	justify-content: space-between;
+	/* width: 1320px; */
+	height: 200px;
+    flex-wrap: wrap;
+    padding: 100px 150px ;
 }
 .review{
     display: flex;
     align-items: center;
-    width: 500px; 
-    -ms-flex-wrap: wrap;
+    width: 200px; 
+    
    
+}
+.review p{
+    margin: 10px;
 }
 .review p:hover{
     margin: 10px;
@@ -284,6 +315,81 @@ nav h3{
     
 }
 .review:hover{
-    border: 2px solid red;
-    border-radius: 10px;
+    border: 1px solid red;
+    border-radius: 50px;
 }
+.footer-style{
+    width: 100%;
+    height: 500px;
+    background: #0B0223;
+    margin: 0px;
+    margin-left: -1px;
+}
+.footer-logo-style{
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    padding-bottom: 0px;
+    padding-top: 20px;
+}
+.footer-logo img{
+    padding-right: 10px;
+}
+.footer-logo h2 span{
+    color:#F948B2;
+    font-size: 40px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
+.first-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px
+}
+.second-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px
+}
+.first-ul li, .second-ul li{
+    color: #fff;
+    font-size: 20px;
+    list-style: none;
+    padding: 10px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 20px;
+}
+.middle-ul{
+    display: flex;
+    align-items: center;
+    padding: 10px 300px;
+    justify-content: space-between;
+}
+.middle-ul li{
+    list-style: none;
+}
+@media screen and (max-width: 480px) {
+    nav{
+       flex-direction: column;
+       justify-content: center;
+       display: flex;
+       padding: 0px;
+    }
+    .nav-container{
+        padding-left: 0px !important;
+    }
+    
+    .nav-items{
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
